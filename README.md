@@ -1,6 +1,7 @@
 # matlab-dubins
 Dubins Path implementation on matlab
-<img src="./img/dubins.png" alt="example" style="width:250px;"/>
+
+ <img src="./img/dubins.png" alt="example" width="500"/>
 
 ### constructor
 Dubins(array of waypoint[x y],dubinsRadius,softingPoint)
