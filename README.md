@@ -5,7 +5,7 @@ Dubins Path implementation on matlab
 Dubins(array of waypoint[x y],dubinsRadius,softingPoint)
 
 ### result
-array of dubins 
+array of <struct: x y>
 
 ### info 
 - greater softingPoint make dubins circle softer but require more computing
