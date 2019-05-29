@@ -3,7 +3,7 @@ classdef Dubins < handle
 %by : Adrian A. Firmansyah [http://github.com/kron3]
 %     
 %constructor: Dubins(array of waypoint[x y],dubinsRadius,softingPoint)
-%result : array of dubins 
+%result : array of<struct: x y>
 %> greater softingPoint make dubins circle softer but require more computing
 %> result can be accessed in Dubins.result [array of<struct: x y>]
 %     
