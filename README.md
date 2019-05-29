@@ -12,6 +12,8 @@ array of dubins
 - result can be accessed in Dubins.result [array of<struct: x y>]
     
 ### example
+```matlab
 waypoint = [1 1 ; 4 3 ; 8 7]; radius = 1;
 dubins = Dubins( waypoint , radius , 10);
 result = dubins.result;
+```
