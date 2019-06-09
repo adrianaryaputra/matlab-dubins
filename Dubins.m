@@ -80,18 +80,18 @@ classdef Dubins < handle
         %result: coordinate[x y]
             if sind(h-hr) == 0
                 rr = 0;
-                x = n(1) + 0.5;
-                y = n(2) + 0.5;
+                x = n(1);
+                y = n(2);
                 hd = 0;
             elseif sind(h-hr) > 0
                 rr = r;
-                x = n(1) - ( r*cos(deg2rad(h)+(pi)) ) + 0.5;
-                y = n(2) + ( r*sin(deg2rad(h)+(pi)) ) + 0.5;
+                x = n(1) - ( r*cos(deg2rad(h)+(pi)) );
+                y = n(2) + ( r*sin(deg2rad(h)+(pi)) );
                 hd = 1;
             else
                 rr = r;
-                x = n(1) - ( r*cos(deg2rad(h)+(0)) ) + 0.5;
-                y = n(2) + ( r*sin(deg2rad(h)+(0)) ) + 0.5;
+                x = n(1) - ( r*cos(deg2rad(h)+(0)) );
+                y = n(2) + ( r*sin(deg2rad(h)+(0)) );
                 hd = 0;
             end
             result = this.Circle(rr,x,y,hd);
@@ -195,4 +195,3 @@ classdef Dubins < handle
         
     end
 end
-
